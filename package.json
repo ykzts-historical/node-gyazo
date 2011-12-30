@@ -2,12 +2,17 @@
   "name": "gyazo-server",
   "version": "0.0.1",
   "dependencies": {
-    "formidable": "1.0.8"
+    "optparse": ">= 1.0.3",
+    "formidable": ">= 1.0.8"
   },
   "directories": {
+    "bin": "./bin",
     "lib": "./lib"
   },
   "main": "./index",
+  "bin": {
+    "gyazo-server": "./bin/gyazo-server.js"
+  },
   "engines": {
     "node": ">= 0.6.0"
   }
