@@ -1,0 +1,14 @@
+{
+  "name": "gyazo-server",
+  "version": "0.0.1",
+  "dependencies": {
+    "formidable": "1.0.8"
+  },
+  "directories": {
+    "lib": "./lib"
+  },
+  "main": "./index",
+  "engines": {
+    "node": ">= 0.6.0"
+  }
+}
