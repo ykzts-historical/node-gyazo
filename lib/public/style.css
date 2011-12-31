@@ -1,0 +1,11 @@
+@charset "utf-8";
+
+#drop-area {
+  width: 90%;
+  margin: 1em auto;
+  border: thin solid silver;
+  border-radius: 1em;
+  background-color: snow;
+  text-align: center;
+  line-height: 5;
+}

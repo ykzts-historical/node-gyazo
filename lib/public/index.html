@@ -1,0 +1,16 @@
+<!doctype html>
+<link rel="stylesheet" href="/style.css">
+<title>gyazo server</title>
+<h1>gyazo server</h1>
+<p>Please money.</p>
+<form action="/upload.cgi" method="POST" enctype="multipart/form-data">
+  <fieldset>
+    <legend><label for="imagedata">FILE</label></legend>
+    <input type="file" name="imagedata" id="imagedata" multiple>
+  </fieldset>
+  <menu>
+    <li><button type="submit">UPLOAD</button></li>
+    <li><button type="reset">RESET</button></li>
+  </menu>
+</form>
+<script src="/uploader.js"></script>
