@@ -1,3 +1,4 @@
 # Gyazo Server
 
-    node lib/gyazo-server.js
+    npm -g install
+    gyazo-server --port 8080 --upload-dir /var/gyazo/data
