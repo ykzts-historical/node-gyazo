@@ -19,6 +19,7 @@
     if (options.debug) {
       server.on('listening', function() {
         util.puts('Run Gyazo Server.');
+        util.puts(util.inspect(options));
       });
       server.on('request', function(request, response) {
         var method = request.method.toUpperCase();
@@ -31,11 +32,12 @@
   function optparser(argv, options) {
     options = options || {};
     argv.forEach(function(opt) {
-      if (!opt.slice(0, 2) === '--') {
+      if (opt.slice(0, 2) !== '--') {
         return;
       }
       var _ = opt.split('=');
-      options[_[0].slice(2)] = _[1] || true;
+      var key = _[0].slice(2).replace(/-/g, '_');
+      options[key] = _[1] || true;
     });
     return options;
   }
