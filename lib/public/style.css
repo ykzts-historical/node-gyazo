@@ -9,3 +9,13 @@
   text-align: center;
   line-height: 5;
 }
+
+#uploaded-files li {
+  display: inline-block;
+  margin: .5em;
+}
+
+#uploaded-files img {
+  max-width: 200px;
+  max-height: 200px;
+}
