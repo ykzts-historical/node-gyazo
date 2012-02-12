@@ -1,7 +1,9 @@
 #!/usr/bin/env node
 (function() {
-  const util = require('util');
-  const GyazoServer = require('../lib/gyazo-server');
+  'use strict';
+
+  var util = require('util');
+  var GyazoServer = require('../lib/server');
 
   function main() {
     var argv = process.argv;

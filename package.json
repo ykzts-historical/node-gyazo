@@ -1,6 +1,6 @@
 {
-  "name": "gyazo-server",
-  "version": "0.0.1",
+  "name": "gyazo",
+  "version": "0.1.0",
   "dependencies": {
     "formidable": ">= 1.0.8"
   },

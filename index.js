@@ -1,1 +1,3 @@
-module.exports = require('./lib/gyazo-server');
+(function() {
+  module.exports = require('./lib');
+})();
