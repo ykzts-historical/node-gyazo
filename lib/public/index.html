@@ -3,14 +3,16 @@
 <title>gyazo server</title>
 <h1>gyazo server</h1>
 <p>Please money.</p>
-<form action="/upload.cgi" method="POST" enctype="multipart/form-data">
+<form action="/upload.cgi" id="gyazo-upload" method="POST" enctype="multipart/form-data">
   <fieldset>
-    <legend><label for="imagedata">FILE</label></legend>
-    <input type="file" name="imagedata" id="imagedata" multiple>
+    <legend><label for="gyazo-id">Gyazo ID</label></legend>
+    <input type="text" name="id" id="gyazo-id" value="" placeholder="gyazo id"></p>
   </fieldset>
+  <p><input type="file" name="imagedata" id="imagedata" multiple><label for="imagedata"><output id="upload-filenames">SELECT UPLOAD FILES</output></label></p>
   <menu>
     <li><button type="submit">UPLOAD</button></li>
     <li><button type="reset">RESET</button></li>
   </menu>
 </form>
 <script src="/uploader.js"></script>
+<script src="/site-script.js"></script>

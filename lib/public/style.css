@@ -1,6 +1,28 @@
 @charset "utf-8";
 
-#drop-area {
+body {
+  margin: 0;
+  padding: 0;
+}
+
+fieldset {
+  border: 0;
+}
+
+fieldset legend {
+  display: none;
+}
+
+#gyazo-id {
+  width: 20em;
+}
+
+#imagedata {
+  display: none;
+}
+
+#imagedata + label {
+  display: block;
   width: 90%;
   margin: 1em auto;
   border: thin solid silver;
@@ -8,6 +30,14 @@
   background-color: snow;
   text-align: center;
   line-height: 5;
+}
+
+#imagedata:disabled + label::after {
+  content: 'YOUR USE WEB BROWER IS NOT SUPPORT FILE UPLOAD';
+}
+
+#imagedata:disabled + label output {
+  display: none;
 }
 
 #uploaded-files li {
