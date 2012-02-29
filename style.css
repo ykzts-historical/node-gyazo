@@ -1,0 +1,58 @@
+@charset "utf-8";
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+fieldset {
+  border: 0;
+}
+
+fieldset legend {
+  display: none;
+}
+
+#gyazo-id {
+  width: 20em;
+}
+
+#imagedata {
+  position: absolute;
+  height: 0px;
+  visibility: hidden;
+}
+
+#imagedata + label {
+  display: block;
+  width: 90%;
+  margin: 1em auto;
+  border: thin solid silver;
+  border-radius: 1em;
+  background-color: snow;
+  text-align: center;
+  line-height: 5;
+}
+
+#imagedata:disabled + label::after {
+  content: 'YOUR USE WEB BROWER IS NOT SUPPORT FILE UPLOAD';
+}
+
+#imagedata:valid + label::after {
+  content: 'SELECTED UPLOAD FILES';
+}
+
+#imagedata:disabled + label output,
+#imagedata:valid + label output {
+  display: none;
+}
+
+#uploaded-files li {
+  display: inline-block;
+  margin: .5em;
+}
+
+#uploaded-files img {
+  max-width: 200px;
+  max-height: 200px;
+}
