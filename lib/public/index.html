@@ -2,13 +2,12 @@
 <link rel="stylesheet" href="/style.css">
 <title>gyazo server</title>
 <h1>gyazo server</h1>
-<p>Please money.</p>
 <form action="/upload.cgi" id="gyazo-upload" method="POST" enctype="multipart/form-data">
   <fieldset>
     <legend><label for="gyazo-id">Gyazo ID</label></legend>
     <input type="text" name="id" id="gyazo-id" value="" placeholder="gyazo id"></p>
   </fieldset>
-  <p><input type="file" name="imagedata" id="imagedata" multiple><label for="imagedata"><output id="upload-filenames">SELECT UPLOAD FILES</output></label></p>
+  <p><input type="file" name="imagedata" id="imagedata" accept="image/png" required><label for="imagedata"><output>SELECT UPLOAD FILES</output></label></p>
   <menu>
     <li><button type="submit">UPLOAD</button></li>
     <li><button type="reset">RESET</button></li>

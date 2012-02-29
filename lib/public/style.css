@@ -18,7 +18,9 @@ fieldset legend {
 }
 
 #imagedata {
-  display: none;
+  position: absolute;
+  height: 0px;
+  visibility: hidden;
 }
 
 #imagedata + label {
@@ -36,7 +38,12 @@ fieldset legend {
   content: 'YOUR USE WEB BROWER IS NOT SUPPORT FILE UPLOAD';
 }
 
-#imagedata:disabled + label output {
+#imagedata:valid + label::after {
+  content: 'SELECTED UPLOAD FILES';
+}
+
+#imagedata:disabled + label output,
+#imagedata:valid + label output {
   display: none;
 }
 
