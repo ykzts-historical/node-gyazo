@@ -1,18 +1,22 @@
 {
   "name": "gyazo",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "dependencies": {
-    "formidable": ">= 1.0.8"
+    "npm": "1.1.x",
+    "formidable": "latest"
   },
   "directories": {
     "bin": "./bin",
     "lib": "./lib"
   },
-  "main": "./index",
+  "main": "./",
   "bin": {
     "gyazo-server": "./bin/gyazo-server.js"
   },
   "engines": {
     "node": ">= 0.6.0"
+  },
+  "scripts": {
+    "start": "./bin/gyazo-server.js --port=${PORT:-8080} --upload-dir=./tmp --debug"
   }
 }
