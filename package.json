@@ -1,9 +1,25 @@
 {
   "name": "gyazo",
-  "version": "0.2.0",
+  "version": "0.2.1",
+  "description": "Gyazo clone using the Node.",
+  "keywords": [
+    "gyazo",
+    "uploader"
+  ],
+  "author": "Yamagishi Kazutoshi <ykzts@desire.sh> (http://desire.sh/)",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/ykzts/node-gyazo.git"
+  },
+  "licenses": [
+    {
+      "type": "MIT License",
+      "url": "https://raw.github.com/ykzts/node-gyazo/master/LICENSE"
+    }
+  ],
   "dependencies": {
     "npm": "1.1.x",
-    "formidable": "latest"
+    "formidable": "1.0.x"
   },
   "directories": {
     "bin": "./bin",
@@ -14,7 +30,7 @@
     "gyazo-server": "./bin/gyazo-server.js"
   },
   "engines": {
-    "node": ">= 0.6.0"
+    "node": ">= 0.8.0"
   },
   "scripts": {
     "start": "./bin/gyazo-server.js --port=${PORT:-8080} --upload-dir=./tmp --debug"
