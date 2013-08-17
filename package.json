@@ -1,7 +1,7 @@
 {
   "name": "gyazo",
-  "version": "0.2.1",
-  "description": "Gyazo clone using the Node.",
+  "version": "0.3.0.dev",
+  "description": "Gyazo clone using the Node. This server is included web UI",
   "keywords": [
     "gyazo",
     "uploader"
